@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+  }
+  
+  header {
+    background-color: #1a2a6c; /* Fondo azul oscuro */
+    background-image: linear-gradient(315deg, #1a2a6c 0%, #b21f1f 74%);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+  }
+  
+  .header-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor legibilidad */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px; /* Ancho máximo para el contenido */
+    margin: 0 20px; /* Margen horizontal */
+  }
+  
+  .header-content img {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0 auto 20px; /* Espacio debajo de la imagen */
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px; /* Ajustar el tamaño del texto */
+    line-height: 1.4; /* Ajustar la altura de línea para mejorar la legibilidad */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    max-width: 200px; /* Limitar el ancho máximo de la tarjeta */
+    margin: 0 auto; /* Centrar las tarjetas en su columna */
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card__item {
+    position: relative;
+  }
+  
+  .card__img_bg {
+    width: 100%;
+    height: 100px; /* Reducir la altura de la imagen de fondo */
+    object-fit: cover;
+  }
+  
+  .data_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .card__img {
+    width: 80px; /* Reducir el tamaño de la imagen del póster */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .data_text {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .data_text h1 {
+    font-size: 16px; /* Reducir el tamaño del título */
+    margin: 10px 0;
+  }
+  
+  .data_text p {
+    font-size: 12px; /* Reducir el tamaño del texto de la descripción */
+    color: #bbb;
+  }
+  
